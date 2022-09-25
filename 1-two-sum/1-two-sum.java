@@ -1,14 +1,16 @@
 class Solution {
-    public int[] twoSum(int[] nums, int target) {        
+    public int[] twoSum(int[] nums, int target) {
+        int[] output = new int[2];
         int i=0; 
         while(i<nums.length){
             int j = i+1;
             while(j<nums.length){
                 if((nums[i]+nums[j])==target){
-                    return new int[] {i, j};
+                    output[0] = i;
+                    output[1] = j;
                 }j++;                    
             }i++;
         }
-        throw new IllegalArgumentException("uh-oh");
+        return output;    
     }
 }
