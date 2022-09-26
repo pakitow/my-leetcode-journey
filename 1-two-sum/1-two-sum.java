@@ -7,6 +7,6 @@ class Solution {
             }
             nummap.put(nums[i],i);
         }
-        return null;
+        throw new IllegalArgumentException("uh-oh");
     }
 }
