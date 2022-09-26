@@ -4,7 +4,7 @@ class Solution {
         for(int i=0; i<nums.length; i++){
             int complement = target - nums[i];
             if(nummap.containsKey(target-nums[i])){
-                return new int[] {nummap.get(complement),i};
+                return new int[] {nummap.get(target-nums[i]),i};
             }
             nummap.put(nums[i],i);
         }
